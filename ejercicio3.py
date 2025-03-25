@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Estefania Soriano"
 
 """Pide una nota (número). Muestra la calificación según la nota:
     0-3: Muy deficiente.
@@ -13,13 +13,28 @@ __Author__="José Gaspar Sánchez García"
 
 # Implemente función obtenerCalificacion
 def obtenerCalificaion(nota) :
-    calificacion="Incorrecta"
-   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
+    if 0 <= nota < 3:
+        calificacion = "Muy deficiente"
+    elif 3 <= nota < 5:
+        calificacion = "Insuficiente"
+    elif 5 <= nota < 6:
+        calificacion = "Suficiente"
+    elif 6 <= nota < 7:
+        calificacion = "Bien"
+    elif 7 <= nota < 9:
+        calificacion = "Notable"
+    elif 9 <= nota <= 10:
+        calificacion = "Sobresaliente"
+    else:
+        calificacion = "Incorrecta"
     return calificacion
+   # Implemente aquí ... Si (condición) entonces ... sino ... si (condición) entonces ... sino ...
+
 
 # Programa principal
 def main():
-    n=int(input("Introduzca la nota: "));
-    print('Calificación: '+obtenerCalificaion(n));
+    n=int(input("Introduzca la nota: "))
+    print('Calificación: '+obtenerCalificaion(n))
+
 if __name__== "__main__" :
    main()

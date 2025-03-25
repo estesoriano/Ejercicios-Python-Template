@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Estefania Soriano"
 
 """Escriba un programa que simule el juego **Piedra, papel, tijera** para dos jugadores. Las reglas del juego son las siguientes: 
     Simultáneamente, los dos jugadores muestran una mano en tres posibles posiciones:
@@ -47,8 +47,8 @@ def main():
         j1 = random.choice(["piedra", "papel", "tijera"])
         j2 = random.choice(["piedra", "papel", "tijera"])
         
-        # print(nombre1+" ha sacado "+j1+".")
-        # print(nombre2+" ha sacado "+j2+".")
+        print("{0} ha sacado {1}.".format(nombre1, j1))
+        print("{0} ha sacado {1}.".format(nombre2, j2))
         # Implemente los comentarios anteriores empleando print("".format())
        
         

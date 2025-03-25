@@ -1,16 +1,20 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Estefania Soriano"
 
 def suma(x,y) :
+    x = x+y
     return x
 
 def resta(x,y) :
+    x = x-y
     return x
 
 def multiplica(x,y) :
+    x = x*y
     return x
 
 def divide(x,y) :
+    y = x/y
     return y
 
 # Función que crea el menú de la aplicacion.
@@ -36,8 +40,17 @@ def menuApp() :
             minuendo=int(input("Introduzca el minuendo: "))
             sustraendo=int(input("Introduzca el sustraendo: "))
             print("La resta de {0} - {1} = {2}.".format(minuendo,sustraendo,resta(minuendo,sustraendo)))
-       # --> Completa el código fuente del programa <-- 
-        elif opcion !=0 :
+        elif opcion == 3:
+            factor1=int(input("Introduzca el primer factor: "))
+            factor2=int(input("Introduzca el segundo factor: "))
+            print("El producto de {0} * {1} = {2}.".format(factor1, factor2, multiplica(factor1, factor2)))
+        elif opcion == 4:
+            dividendo=int(input("Introduzca el dividendo: "))
+            divisor=int(input("Introduzca el divisor: "))
+            print("La división de {0} / {1} = {2}.".format(dividendo, divisor, divide(dividendo, divisor)))
+        elif opcion == 0:
+            print("Programa finalizado")
+        else:
             print("Error: Opción incorrecta, introduzca una nueva opción.")
 
 # Programa principal

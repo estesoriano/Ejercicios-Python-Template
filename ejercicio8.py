@@ -1,5 +1,5 @@
 # coding=utf-8
-__Author__="José Gaspar Sánchez García"
+__Author__="Estefania Soriano"
 
 
 # Función que determina si un numero es primo.
@@ -20,9 +20,12 @@ def fibonacci(n) :
         vector.append(1)
         vector.append(1)
         # Creamos aquí el bucle WHILE
-        # --> Implemente el código del Bucle
-    elif n==1 :
-        vector[0]=1
+        contador=2
+
+        while contador < n:
+            siguientenumero=vector[contador - 1] + vector[contador - 2]
+            vector.append(siguientenumero)
+            contador=contador+1
 
     return vector; # Retorno de la función
 

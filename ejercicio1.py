@@ -1,4 +1,6 @@
-# Autor:
+# Autor: Estefania Soriano
 
 # Imprime Hola mundo por pantalla
-# Escrube en pantalla Hola muddo
+# Escribe en pantalla Hola muddo
+
+print("Hola mundo")
